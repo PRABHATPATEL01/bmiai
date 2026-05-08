@@ -1,117 +1,498 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BMI AI Privacy Policy</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>BMI AI - Privacy Policy</title>
 
 <style>
-body{
-    font-family:Arial, sans-serif;
-    background:#F5F7FA;
-    padding:20px;
-    color:#1E293B;
-    line-height:1.7;
-}
-.container{
-    max-width:900px;
-    margin:auto;
-    background:white;
-    padding:30px;
-    border-radius:20px;
-    box-shadow:0 4px 20px rgba(0,0,0,0.05);
-}
-h1{
-    color:#4F46E5;
-}
-h2{
-    margin-top:25px;
-    color:#111827;
-}
-</style>
 
+:root{
+
+    --appleBlue:#0A84FF;
+    --appleIndigo:#5E5CE6;
+    --appleBg:#EEF5FF;
+    --card:#FFFFFF;
+    --text:#1C1C1E;
+    --sub:#6E6E73;
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display",sans-serif;
+
+    background:
+    linear-gradient(
+        180deg,
+        #EAF4FF 0%,
+        #F7F9FC 100%
+    );
+
+    color:var(--text);
+
+    padding:24px;
+
+    line-height:1.7;
+
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+}
+
+.hero{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:40px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #0A84FF,
+        #5E5CE6
+    );
+
+    min-height:420px;
+
+    padding:50px;
+
+    color:white;
+
+    box-shadow:
+    0 25px 60px rgba(10,132,255,0.18);
+
+    margin-bottom:28px;
+
+}
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+        90deg,
+        rgba(10,132,255,0.10),
+        rgba(255,255,255,0.08)
+    );
+
+}
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:520px;
+
+}
+
+.hero h1{
+
+    font-size:56px;
+
+    font-weight:800;
+
+    margin-bottom:18px;
+
+}
+
+.hero p{
+
+    font-size:20px;
+
+    color:rgba(255,255,255,0.92);
+
+}
+
+.hero-image{
+
+    position:absolute;
+
+    right:0;
+
+    bottom:0;
+
+    width:48%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    opacity:0.95;
+
+}
+
+.badge{
+
+    display:inline-block;
+
+    margin-top:24px;
+
+    padding:12px 18px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,0.16);
+
+    backdrop-filter:blur(12px);
+
+    font-weight:600;
+
+}
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:24px;
+
+}
+
+.card{
+
+    background:rgba(255,255,255,0.78);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:34px;
+
+    padding:32px;
+
+    box-shadow:
+    0 10px 40px rgba(15,23,42,0.05);
+
+    border:1px solid rgba(255,255,255,0.7);
+
+}
+
+.card h2{
+
+    font-size:30px;
+
+    margin-bottom:18px;
+
+}
+
+.card p{
+
+    color:var(--sub);
+
+    margin-bottom:14px;
+
+    font-size:17px;
+
+}
+
+.card ul{
+    padding-left:20px;
+}
+
+.card li{
+
+    color:var(--sub);
+
+    margin-bottom:10px;
+
+}
+
+.section-icon{
+
+    width:64px;
+    height:64px;
+
+    border-radius:22px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:28px;
+
+    margin-bottom:20px;
+
+    background:
+    linear-gradient(
+        135deg,
+        rgba(10,132,255,0.15),
+        rgba(94,92,230,0.15)
+    );
+
+}
+
+.info-box{
+
+    margin-top:20px;
+
+    padding:20px;
+
+    border-radius:24px;
+
+    background:
+    linear-gradient(
+        135deg,
+        rgba(10,132,255,0.10),
+        rgba(94,92,230,0.10)
+    );
+
+    border-left:5px solid var(--appleBlue);
+
+}
+
+.warning{
+
+    background:
+    linear-gradient(
+        135deg,
+        rgba(255,69,58,0.12),
+        rgba(255,159,10,0.12)
+    );
+
+    border-left:5px solid #FF453A;
+
+}
+
+.footer{
+
+    text-align:center;
+
+    margin-top:40px;
+
+    color:#8E8E93;
+
+    padding-bottom:30px;
+
+}
+
+a{
+    color:var(--appleBlue);
+    text-decoration:none;
+    font-weight:600;
+}
+
+@media(max-width:900px){
+
+    .hero{
+        min-height:auto;
+        padding:40px 30px 340px;
+    }
+
+    .hero-image{
+        width:100%;
+        height:320px;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+}
+
+</style>
 </head>
 <body>
 
 <div class="container">
 
-<h1>Privacy Policy</h1>
+<div class="hero">
 
-<p>Effective Date: May 8, 2026</p>
+<div class="hero-content">
 
-<p>
-BMI AI respects your privacy. This application is designed for informational
-and wellness purposes only.
-</p>
-
-<h2>Information We Collect</h2>
+<h1>BMI AI</h1>
 
 <p>
-BMI AI may collect basic user-entered information such as:
+Premium Apple-inspired BMI and wellness tracking experience focused on privacy, elegant design, and secure local health tracking.
 </p>
+
+<div class="badge">
+Privacy Policy • Updated May 2026
+</div>
+
+</div>
+
+<img class="hero-image" src="a_clean_modern_ios_style_mobile_app_dashboard_ui.png" alt="BMI AI UI Preview" />
+
+</div>
+
+<div class="grid">
+
+<div class="card">
+
+<div class="section-icon">🔐</div>
+
+<h2>Privacy First</h2>
+
+<p>
+BMI AI is designed with privacy-focused architecture.
+Most fitness and BMI information stays locally on your device.
+</p>
+
+<div class="info-box">
+Your biometric tracking records are not sold or shared with third parties.
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="section-icon">📊</div>
+
+<h2>Collected Information</h2>
 
 <ul>
+<li>Name</li>
+<li>Email Address</li>
 <li>Height</li>
 <li>Weight</li>
 <li>Age</li>
 <li>Gender</li>
+<li>BMI History</li>
+<li>Daily and Weekly Goals</li>
+<li>Fitness Tracking Progress</li>
 </ul>
 
-<p>
-This information is used only for BMI calculation and app functionality.
-</p>
+</div>
 
-<h2>Data Storage</h2>
+<div class="card">
 
-<p>
-Your data is stored locally on your device unless explicitly synced using
-cloud services chosen by the user.
-</p>
+<div class="section-icon">☁️</div>
 
-<h2>Third-Party Services</h2>
+<h2>Authentication</h2>
 
 <p>
-BMI AI may use trusted third-party services such as:
+BMI AI supports:
 </p>
 
 <ul>
-<li>Google Firebase</li>
-<li>Google Play Services</li>
-<li>Analytics services</li>
+<li>Email Login</li>
+<li>Google Sign-In</li>
+<li>Guest Mode Access</li>
 </ul>
+
+<p>
+Firebase Authentication may securely manage login functionality.
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="section-icon">📱</div>
+
+<h2>Advertising</h2>
+
+<p>
+BMI AI uses Google AdMob for advertisements.
+</p>
+
+<p>
+Google services may collect limited technical information according to Google policies.
+</p>
+
+<p>
+<a href="https://policies.google.com/privacy">
+Google Privacy Policy
+</a>
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="section-icon">🩺</div>
 
 <h2>Medical Disclaimer</h2>
 
+<div class="info-box warning">
+BMI AI does not provide medical diagnosis or healthcare treatment.
+BMI results and insights are informational only.
+</div>
+
 <p>
-BMI AI does not provide medical advice, diagnosis, or treatment.
-Always consult qualified healthcare professionals.
+Always consult qualified healthcare professionals for medical advice.
 </p>
+
+</div>
+
+<div class="card">
+
+<div class="section-icon">🧒</div>
 
 <h2>Children's Privacy</h2>
 
 <p>
-BMI AI does not knowingly collect personal information from children.
+BMI AI is currently not intended for users under 13 years of age.
 </p>
-
-<h2>Security</h2>
 
 <p>
-Reasonable security measures are used to protect user information.
+Future versions may include pediatric BMI standards and child-safe protections.
 </p>
 
-<h2>Changes to This Policy</h2>
+</div>
+
+<div class="card">
+
+<div class="section-icon">🗑️</div>
+
+<h2>Account Removal</h2>
 
 <p>
-This privacy policy may be updated periodically.
+Users may delete their account at any time.
 </p>
+
+<p>
+Most tracking information is stored locally and may be removed after uninstalling the app.
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="section-icon">📧</div>
 
 <h2>Contact</h2>
 
 <p>
-For support or privacy concerns, contact the app developer.
+For privacy or support questions:
 </p>
+
+<p>
+<a href="mailto:connect.indiaswami1@gmail.com">
+connect.indiaswami1@gmail.com
+</a>
+</p>
+
+</div>
+
+</div>
+
+<div class="footer">
+
+BMI AI © 2026 • Premium Apple Inspired Privacy Experience
+
+</div>
 
 </div>
 
 </body>
 </html>
+https://prabhatpatel01.github.io/bmiai/privacy-policy.html
+```
