@@ -47,6 +47,7 @@ body{
     max-width:1100px;
     margin:auto;
 }
+
 .hero{
 
     position:relative;
@@ -62,6 +63,8 @@ body{
         #5E5CE6
     );
 
+    min-height:420px;
+
     padding:50px;
 
     color:white;
@@ -73,54 +76,66 @@ body{
 
 }
 
-.hero-wrapper{
+.hero::before{
 
-    display:flex;
+    content:"";
 
-    align-items:center;
+    position:absolute;
 
-    justify-content:space-between;
+    inset:0;
 
-    gap:30px;
-
-    flex-wrap:wrap;
+    background:
+    linear-gradient(
+        90deg,
+        rgba(10,132,255,0.10),
+        rgba(255,255,255,0.08)
+    );
 
 }
 
 .hero-content{
 
-    flex:1;
+    position:relative;
 
-    min-width:300px;
+    z-index:2;
+
+    max-width:520px;
 
 }
 
-.hero-image-box{
+.hero h1{
 
-    flex:1;
+    font-size:56px;
 
-    min-width:320px;
+    font-weight:800;
 
-    display:flex;
+    margin-bottom:18px;
 
-    justify-content:center;
+}
 
-    align-items:center;
+.hero p{
+
+    font-size:20px;
+
+    color:rgba(255,255,255,0.92);
 
 }
 
 .hero-image{
 
-    width:100%;
+    position:absolute;
 
-    max-width:420px;
+    right:0;
 
-    border-radius:32px;
+    bottom:0;
 
-    object-fit:contain;
+    width:48%;
 
-    box-shadow:
-    0 20px 50px rgba(0,0,0,0.18);
+    height:100%;
+
+    object-fit:cover;
+
+    opacity:0.95;
 
 }
 
@@ -299,8 +314,6 @@ a{
 
 <div class="hero">
 
-<div class="hero-wrapper">
-
 <div class="hero-content">
 
 <h1>BMI AI</h1>
@@ -315,19 +328,10 @@ Privacy Policy • Updated May 2026
 
 </div>
 
-<div class="hero-image-box">
-
-<img
-class="hero-image"
-src="a_clean_modern_ios_style_mobile_app_dashboard_ui.png"
-alt="BMI AI Dashboard"
-/>
+<img class="hero-image" src="a_clean_modern_ios_style_mobile_app_dashboard_ui.png" alt="BMI AI UI Preview" />
 
 </div>
 
-</div>
-
-</div>
 <div class="grid">
 
 <div class="card">
@@ -490,4 +494,3 @@ BMI AI © 2026 • Premium Apple Inspired Privacy Experience
 
 </body>
 </html>
-
