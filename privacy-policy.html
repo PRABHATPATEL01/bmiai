@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8" />
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 <title>BMI AI - Privacy Policy</title>
 
 <style>
@@ -26,7 +30,11 @@
 
 body{
 
-    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display",sans-serif;
+    font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "SF Pro Display",
+    sans-serif;
 
     background:
     linear-gradient(
@@ -44,17 +52,18 @@ body{
 }
 
 .container{
-    max-width:1100px;
+
+    max-width:1200px;
+
     margin:auto;
+
 }
+
+
 
 .hero{
 
-    position:relative;
-
-    overflow:hidden;
-
-    border-radius:40px;
+    border-radius:42px;
 
     background:
     linear-gradient(
@@ -63,49 +72,44 @@ body{
         #5E5CE6
     );
 
-    min-height:420px;
-
-    padding:50px;
+    padding:60px;
 
     color:white;
 
-    box-shadow:
-    0 25px 60px rgba(10,132,255,0.18);
+    overflow:hidden;
 
-    margin-bottom:28px;
+    box-shadow:
+    0 25px 70px rgba(10,132,255,0.20);
+
+    margin-bottom:30px;
 
 }
 
-.hero::before{
+.hero-wrapper{
 
-    content:"";
+    display:flex;
 
-    position:absolute;
+    align-items:center;
 
-    inset:0;
+    justify-content:space-between;
 
-    background:
-    linear-gradient(
-        90deg,
-        rgba(10,132,255,0.10),
-        rgba(255,255,255,0.08)
-    );
+    gap:50px;
+
+    flex-wrap:wrap;
 
 }
 
 .hero-content{
 
-    position:relative;
+    flex:1;
 
-    z-index:2;
-
-    max-width:520px;
+    min-width:320px;
 
 }
 
 .hero h1{
 
-    font-size:56px;
+    font-size:64px;
 
     font-weight:800;
 
@@ -115,27 +119,11 @@ body{
 
 .hero p{
 
-    font-size:20px;
+    font-size:21px;
 
     color:rgba(255,255,255,0.92);
 
-}
-
-.hero-image{
-
-    position:absolute;
-
-    right:0;
-
-    bottom:0;
-
-    width:48%;
-
-    height:100%;
-
-    object-fit:cover;
-
-    opacity:0.95;
+    line-height:1.7;
 
 }
 
@@ -145,7 +133,7 @@ body{
 
     margin-top:24px;
 
-    padding:12px 18px;
+    padding:12px 22px;
 
     border-radius:999px;
 
@@ -157,30 +145,98 @@ body{
 
 }
 
+.hero-image-box{
+
+    flex:1;
+
+    min-width:340px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.hero-image{
+
+    width:100%;
+
+    max-width:560px;
+
+    height:auto;
+
+    object-fit:contain;
+
+    border-radius:32px;
+
+    display:block;
+
+    filter:
+    drop-shadow(
+        0 30px 50px rgba(0,0,0,0.24)
+    );
+
+}
+
+/* GRID */
+
 .grid{
 
     display:grid;
 
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    grid-template-columns:
+    repeat(auto-fit,minmax(340px,1fr));
 
     gap:24px;
 
 }
 
+/* CARD */
+
 .card{
 
-    background:rgba(255,255,255,0.78);
+    background:
+    rgba(255,255,255,0.78);
 
     backdrop-filter:blur(18px);
 
     border-radius:34px;
 
-    padding:32px;
+    padding:34px;
+
+    border:
+    1px solid rgba(255,255,255,0.7);
 
     box-shadow:
-    0 10px 40px rgba(15,23,42,0.05);
+    0 12px 40px rgba(15,23,42,0.05);
 
-    border:1px solid rgba(255,255,255,0.7);
+}
+
+.section-icon{
+
+    width:68px;
+    height:68px;
+
+    border-radius:24px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:30px;
+
+    margin-bottom:20px;
+
+    background:
+    linear-gradient(
+        135deg,
+        rgba(10,132,255,0.15),
+        rgba(94,92,230,0.15)
+    );
 
 }
 
@@ -196,14 +252,16 @@ body{
 
     color:var(--sub);
 
-    margin-bottom:14px;
-
     font-size:17px;
+
+    margin-bottom:14px;
 
 }
 
 .card ul{
-    padding-left:20px;
+
+    padding-left:22px;
+
 }
 
 .card li{
@@ -214,29 +272,7 @@ body{
 
 }
 
-.section-icon{
-
-    width:64px;
-    height:64px;
-
-    border-radius:22px;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    font-size:28px;
-
-    margin-bottom:20px;
-
-    background:
-    linear-gradient(
-        135deg,
-        rgba(10,132,255,0.15),
-        rgba(94,92,230,0.15)
-    );
-
-}
+/* INFO BOX */
 
 .info-box{
 
@@ -253,7 +289,8 @@ body{
         rgba(94,92,230,0.10)
     );
 
-    border-left:5px solid var(--appleBlue);
+    border-left:
+    5px solid var(--appleBlue);
 
 }
 
@@ -266,7 +303,18 @@ body{
         rgba(255,159,10,0.12)
     );
 
-    border-left:5px solid #FF453A;
+    border-left:
+    5px solid #FF453A;
+
+}
+
+a{
+
+    color:var(--appleBlue);
+
+    text-decoration:none;
+
+    font-weight:600;
 
 }
 
@@ -274,7 +322,7 @@ body{
 
     text-align:center;
 
-    margin-top:40px;
+    margin-top:42px;
 
     color:#8E8E93;
 
@@ -282,57 +330,115 @@ body{
 
 }
 
-a{
-    color:var(--appleBlue);
-    text-decoration:none;
-    font-weight:600;
-}
+/* MOBILE */
 
 @media(max-width:900px){
 
+    body{
+        padding:16px;
+    }
+
     .hero{
-        min-height:auto;
-        padding:40px 30px 340px;
+
+        padding:40px 24px;
+
+    }
+
+    .hero-wrapper{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .hero-content{
+
+        min-width:100%;
+
+    }
+
+    .hero-image-box{
+
+        min-width:100%;
+
+        margin-top:20px;
+
     }
 
     .hero-image{
-        width:100%;
-        height:320px;
+
+        max-width:100%;
+
     }
 
     .hero h1{
-        font-size:42px;
+
+        font-size:44px;
+
+    }
+
+    .hero p{
+
+        font-size:18px;
+
     }
 
 }
 
 </style>
+
 </head>
+
 <body>
 
 <div class="container">
 
+<!-- HERO -->
+
 <div class="hero">
+
+<div class="hero-wrapper">
 
 <div class="hero-content">
 
 <h1>BMI AI</h1>
 
 <p>
-Premium Apple-inspired BMI and wellness tracking experience focused on privacy, elegant design, and secure local health tracking.
+
+Premium Apple-inspired BMI and wellness tracking
+experience focused on privacy, elegant design,
+beautiful analytics, and secure local health tracking.
+
 </p>
 
 <div class="badge">
+
 Privacy Policy • Updated May 2026
+
+</div>
+
+</div>
+
+<div class="hero-image-box">
+
+<img
+class="hero-image"
+src="./a_clean_modern_ios_style_mobile_app_dashboard_ui.png"
+alt="BMI AI Dashboard Preview"
+/>
+
+</div>
+
 </div>
 
 </div>
 
-<img class="hero-image" src="a_clean_modern_ios_style_mobile_app_dashboard_ui.png" alt="BMI AI UI Preview" />
-
-</div>
+<!-- GRID -->
 
 <div class="grid">
+
+<!-- CARD -->
 
 <div class="card">
 
@@ -341,15 +447,23 @@ Privacy Policy • Updated May 2026
 <h2>Privacy First</h2>
 
 <p>
+
 BMI AI is designed with privacy-focused architecture.
-Most fitness and BMI information stays locally on your device.
+Most fitness and BMI information stays locally
+on your device.
+
 </p>
 
 <div class="info-box">
-Your biometric tracking records are not sold or shared with third parties.
+
+Your biometric tracking records are not sold
+or shared with third parties.
+
 </div>
 
 </div>
+
+<!-- CARD -->
 
 <div class="card">
 
@@ -358,18 +472,30 @@ Your biometric tracking records are not sold or shared with third parties.
 <h2>Collected Information</h2>
 
 <ul>
+
 <li>Name</li>
+
 <li>Email Address</li>
+
 <li>Height</li>
+
 <li>Weight</li>
+
 <li>Age</li>
+
 <li>Gender</li>
+
 <li>BMI History</li>
-<li>Daily and Weekly Goals</li>
-<li>Fitness Tracking Progress</li>
+
+<li>Daily & Weekly Goals</li>
+
+<li>Fitness Progress Tracking</li>
+
 </ul>
 
 </div>
+
+<!-- CARD -->
 
 <div class="card">
 
@@ -378,20 +504,30 @@ Your biometric tracking records are not sold or shared with third parties.
 <h2>Authentication</h2>
 
 <p>
+
 BMI AI supports:
+
 </p>
 
 <ul>
+
 <li>Email Login</li>
+
 <li>Google Sign-In</li>
+
 <li>Guest Mode Access</li>
+
 </ul>
 
 <p>
+
 Firebase Authentication may securely manage login functionality.
+
 </p>
 
 </div>
+
+<!-- CARD -->
 
 <div class="card">
 
@@ -400,20 +536,31 @@ Firebase Authentication may securely manage login functionality.
 <h2>Advertising</h2>
 
 <p>
+
 BMI AI uses Google AdMob for advertisements.
+
 </p>
 
 <p>
-Google services may collect limited technical information according to Google policies.
+
+Google services may collect limited technical
+information according to Google policies.
+
 </p>
 
 <p>
+
 <a href="https://policies.google.com/privacy">
+
 Google Privacy Policy
+
 </a>
+
 </p>
 
 </div>
+
+<!-- CARD -->
 
 <div class="card">
 
@@ -422,15 +569,22 @@ Google Privacy Policy
 <h2>Medical Disclaimer</h2>
 
 <div class="info-box warning">
-BMI AI does not provide medical diagnosis or healthcare treatment.
-BMI results and insights are informational only.
+
+BMI AI does not provide medical diagnosis,
+treatment, or healthcare services.
+
 </div>
 
 <p>
-Always consult qualified healthcare professionals for medical advice.
+
+BMI calculations and wellness insights are
+informational only.
+
 </p>
 
 </div>
+
+<!-- CARD -->
 
 <div class="card">
 
@@ -439,14 +593,21 @@ Always consult qualified healthcare professionals for medical advice.
 <h2>Children's Privacy</h2>
 
 <p>
-BMI AI is currently not intended for users under 13 years of age.
+
+BMI AI is currently not intended for children
+under 13 years of age.
+
 </p>
 
 <p>
-Future versions may include pediatric BMI standards and child-safe protections.
+
+Future versions may support pediatric BMI standards.
+
 </p>
 
 </div>
+
+<!-- CARD -->
 
 <div class="card">
 
@@ -455,14 +616,21 @@ Future versions may include pediatric BMI standards and child-safe protections.
 <h2>Account Removal</h2>
 
 <p>
+
 Users may delete their account at any time.
+
 </p>
 
 <p>
-Most tracking information is stored locally and may be removed after uninstalling the app.
+
+Most tracking information is stored locally
+and may be removed after uninstalling the app.
+
 </p>
 
 </div>
+
+<!-- CARD -->
 
 <div class="card">
 
@@ -471,26 +639,39 @@ Most tracking information is stored locally and may be removed after uninstallin
 <h2>Contact</h2>
 
 <p>
-For privacy or support questions:
+
+For support or privacy concerns:
+
 </p>
 
 <p>
-<a href="mailto:connect.indiaswami1@gmail.com">
+
+<a href="mailto:indiaswami1@gmail.com">
+
 connect.indiaswami1@gmail.com
+
 </a>
+
 </p>
 
 </div>
 
 </div>
 
+<!-- FOOTER -->
+
 <div class="footer">
 
-BMI AI © 2026 • Premium Apple Inspired Privacy Experience
+<div class="footer">
+
+BMI AI © 2026 • Secure Fitness Tracking & Privacy Protection
+
+</div>
 
 </div>
 
 </div>
 
 </body>
+
 </html>
